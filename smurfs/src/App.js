@@ -4,7 +4,7 @@ import "./App.css";
 import { connect } from "react-redux";
 import { titleFX, getData, postData, deleteData } from './actions'
 import Smurf from "./components/Smurf";
-import AddSmurfForm from "./components/AddMsurfForm";
+import AddSmurfForm from "./components/AddSmurfForm";
 
 function App({
   titleFX,

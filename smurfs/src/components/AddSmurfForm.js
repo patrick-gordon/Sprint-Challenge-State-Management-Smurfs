@@ -1,7 +1,7 @@
 import React, {useState}from 'react'
 
-function AddSmurfForm ({ addSmurf, postData, smurfs}) {
-    const [tempSmurf, setTempSmurf] = useState({ name: '', age: 0, height: 0})
+function AddSmurfForm ({ addingSmurf, postData, smurfs}) {
+    const [tempSmurf, setTempSmurf] = useState({ name: '', age: 0, height: 0 + 'cm'})
 
     return(
         <form onSubmit={(e) => {
@@ -9,7 +9,7 @@ function AddSmurfForm ({ addSmurf, postData, smurfs}) {
             postData(tempSmurf)
             console.log(smurfs)
         }}>
-            <label htmlFor='name'> Name</label>
+            <label htmlFor='name'>Name</label>
             <input
                 type='text'
                 id='name'
